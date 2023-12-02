@@ -1,0 +1,1025 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+nav ul {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+    background-color: #7ABFBF;
+}
+
+nav label {
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px 20px;
+    position: relative;
+    user-select: none;
+}
+
+nav label span:before {
+    top: 5px;
+}
+
+nav input {
+    display: none;
+}
+
+nav input:checked~ul {
+    max-height: 400px;
+}
+
+nav input:checked~label span {
+    background: transparent;
+}
+
+nav input:checked~label span:before {
+    transform: rotate(-45deg);
+}
+
+nav input:checked~label span:after {
+    transform: rotate(45deg);
+}
+
+nav input:checked~label:not(.steps) span:before,
+nav input:checked~label:not(.steps) span:after {
+    top: 0;
+}
+
+.hamburger span {
+    font-family: "Bebas Neue";
+    margin-left: 15.5%;
+
+}
+
+.hamburger span svg {
+    margin-top: 15%;
+    margin-left: -8%;
+}
+
+
+nav {
+    position: relative;
+    margin-top: -12%;
+    background-color: #ffffff;
+    box-shadow: 0 2px 2px 1px rgb(197, 194, 194);
+}
+
+nav img {
+    height: 25px;
+    width: 25px;
+    margin-right: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #EB5428;
+    top: -10%;
+}
+
+nav li {
+    margin: 5px;
+    font-family: "Bebas Neue";
+    font-weight: bold;
+}
+
+.hamburger li:first-child a {
+    position: absolute;
+    margin-top: 15%;
+    margin-left: 18%;
+    font-family: "Bebas Neue";
+    text-align: center;
+}
+
+.hamburger li:first-child svg {
+    position: relative;
+    background-color: #EB5428;
+    padding: 15% 150% 16% 145%;
+    margin-left: 15%;
+    /* margin-top:-5%; */
+}
+
+.hamburger li:last-child svg {
+    position: relative;
+    margin-right: 5%;
+}
+
+nav li:last-child a {
+    position: absolute;
+    margin-top: 15.5%;
+    margin-left: 77%;
+    font-family: "Bebas Neue";
+    color: black;
+    text-align: center;
+}
+
+li:hover {
+    text-decoration: underline;
+}
+
+html {
+    background-color: rgba(122, 191, 191, .5);
+    font-family: "Montserrat";
+}
+
+.search {
+    margin-top: 10%;
+}
+
+.search input {
+    border: 1px solid #EB5428;
+    position: relative;
+    height: 35px;
+    width: 300px;
+    padding-top: 14px;
+    margin-left: 9%;
+}
+
+.search button {
+    position: relative;
+    background-color: #EB5428;
+    border: 1px solid #EB5428;
+    left: -2%;
+}
+
+.search::placeholder {
+    padding-bottom: 7px;
+}
+
+p,
+dd,
+li,
+nav,
+input {
+    font-family: "Montserrat";
+    font-size: 16px;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Bebas Neue";
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+nav a,
+nav span,
+menu li,
+#social,
+footer {
+    font-size: 20px;
+}
+
+body {
+    background-color: #F2F2F2;
+    margin: 0 auto;
+    width: 414px;
+}
+
+header h2 {
+    visibility: hidden;
+}
+
+.streetTacos h1 {
+    text-align: center;
+    padding: 10px;
+    margin-top: 5%;
+}
+
+.streetTacos img {
+    width: 414px;
+    margin-top: 3%;
+}
+
+.streetTacos p {
+    padding: 10px;
+    line-height: 1.5;
+}
+
+.streetTacos ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.streetTacos a {
+    display: grid;
+    text-decoration: none;
+    color: #EB5428;
+    text-transform: uppercase;
+    font-weight: bold;
+    justify-content: space-evenly;
+    font-family: "Bebas Neue";
+}
+
+.streetTacos li:first-child svg {
+    margin-left: -20%;
+}
+
+.streetTacos li:last-child svg {
+    margin-left: 20%;
+}
+
+.streetTacos li:nth-of-type(3) svg {
+    margin-left: -12%;
+}
+
+.streetTacos li:nth-of-type(2) svg {
+    margin-left: -10%;
+}
+
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+dl {
+    line-height: 1.5;
+}
+
+dt {
+    font-weight: bold;
+    font-size: 16px;
+    display: inline;
+    padding: 10px;
+}
+
+dd {
+    display: inline;
+}
+
+.details h2 {
+    margin: 10px;
+}
+
+.ingredients ul {
+    list-style-type: square;
+    padding: 20px;
+    margin: 5px;
+}
+
+.ingredients li {
+    line-height: 2;
+}
+
+.ingredients h2 {
+    margin-top: 10px;
+}
+
+.directions li {
+    padding: 10px;
+    list-style-type: decimal;
+}
+
+.directions ol {
+    padding: 20px;
+    line-height: 1.5;
+}
+
+.sideDishes {
+    background-color: #7ABFBF;
+    padding-top: 10px;
+    margin-bottom: -15%;
+}
+
+.sideDishes h2 {
+    margin-bottom: 15%;
+}
+
+.figureGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.figureGrid img {
+    position: relative;
+    height: 100px;
+    width: 100px;
+    margin-bottom: 10%;
+    margin-top: 15%;
+    margin-left: 5%;
+}
+
+.figureGrid h3,
+.figureGrid p {
+    text-align: start;
+    margin-left: 33%;
+}
+
+.figureGrid p:nth-of-type(even) {
+    margin-top: -3%;
+    margin-left: 33%;
+    font-weight: bold;
+}
+
+.star {
+    margin-left: 33%;
+    margin-top: 1%;
+    margin-right: 2%;
+    margin-bottom: 15%;
+}
+
+.figureGrid h3 {
+    margin-bottom: -20%;
+}
+
+.figureGrid h3:first-of-type {
+    margin-top: -5%;
+}
+
+.figureGrid p:nth-of-type(odd) {
+    margin-top: -25%;
+    margin-bottom: 5%;
+    font-weight: normal;
+}
+
+.connect {
+    margin-top: -10%;
+}
+
+.connect ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.connect a {
+    display: grid;
+    text-decoration: none;
+    color: #EB5428;
+    text-transform: uppercase;
+    font-weight: bold;
+    justify-content: space-evenly;
+    font-family: "Bebas Neue";
+}
+
+.connect svg {
+    margin-top: 40%;
+}
+
+.connect h2 {
+    visibility: hidden;
+}
+
+footer {
+    margin-top: 20%;
+    background-color: #ffffff;
+}
+
+footer img {
+    height: 50%;
+    width: 50%;
+    margin-left: 23%;
+    margin-right: 25%;
+}
+
+footer p {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 5%;
+}
+
+footer h2 {
+    visibility: hidden;
+}
+
+@media screen and (min-width:768px) {
+
+    body {
+        width: 768px;
+    }
+
+
+    header {
+        background-color: #ffffff;
+        box-shadow: 0 2px 2px 1px rgb(197, 194, 194);
+        height: 275px;
+    }
+
+    nav ul {
+        display: grid;
+        grid-template-columns: repeat(9, 1fr);
+        grid-column-gap: 4.5%;
+        overflow: visible;
+        justify-content: space-evenly;
+        align-items: end;
+    }
+
+    nav {
+        position: relative;
+        box-shadow: none;
+    }
+
+    nav img {
+        height: 55px;
+        width: 55px;
+        margin-top: 10%;
+        display: grid;
+        justify-content: space-evenly;
+        padding-bottom: 5px;
+    }
+
+    .hamburger li:nth-child(3) img,
+    .hamburger li:nth-child(4) img,
+    .hamburger li:nth-child(5) img{
+        margin-left: -10%;
+        margin-top:15%;
+    }
+
+    nav a {
+        display: grid;
+        justify-content: space-between;
+        align-items: end;
+        margin-top: 50%;
+    }
+
+    .hamburger li:first-child svg {
+        position: relative;
+        margin-top: -18%;
+        margin-left: -136.5%;
+        padding: 10px;
+    }
+
+    .hamburger li:last-child svg {
+        position: relative;
+        margin-left: 20%;
+    }
+
+    nav li:last-child a {
+        /* position: absolute; */
+        margin-top: 15%;
+        margin-left: -15%;
+    }
+
+    .search {
+        margin-top: -3%;
+    }
+
+    .search input,
+    .search label {
+        position: relative;
+        margin: 10px;
+        margin-left: 35%;
+        padding-top: 14px;
+        height: 35px;
+        width: 250px;
+        left: 10%;
+        bottom: 50%;
+    }
+
+    .search button {
+        position: relative;
+        margin: 12.5px;
+        left: 6%;
+    }
+
+    .search input::placeholder {
+        padding-bottom: 8px;
+    }
+
+    .streetTacos h1 {
+        text-align: start;
+        margin: 10px;
+    }
+
+    .streetTacos img {
+        width: 768px;
+        z-index: 0;
+    }
+
+    .streetTacos ul {
+        margin-bottom: -12.75%;
+        background-color: rgba(40, 40, 40, 0.6);
+    }
+
+    .streetTacos a {
+        position: relative;
+        padding: 5%;
+        background-color: rgba(255, 255, 255, 0.6);
+    }
+
+    dt {
+        margin-left: 37%;
+    }
+
+    .details {
+        margin-bottom: 5%;
+    }
+
+    .recipe {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .directions {
+        margin-top: 3%;
+        margin-left: -45%;
+    }
+
+    .directions h2 {
+        margin-top: -7%;
+    }
+
+    .ingredients h2 {
+        text-align: start;
+        margin-left: 5%;
+        margin-top: -8%;
+    }
+
+    .figureGrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 17%;
+    }
+
+    .figureGrid img {
+        height: 100px;
+        width: 100px;
+        margin-bottom: 5%;
+        margin-top: 15%;
+    }
+
+    .figure1,
+    .figure3 {
+        grid-column: 1;
+        margin-left: -5%;
+    }
+
+    .figure2,
+    .figure4 {
+        grid-column: 2;
+    }
+
+    .figureGrid h3,
+    .figureGrid p {
+        text-align: start;
+        margin-left: 35%;
+    }
+
+    .figureGrid p {
+        margin-top: -10%;
+        text-align: start;
+        margin-left: 35%;
+    }
+
+    .star {
+        margin-left: 52%;
+        margin-top: -5%;
+    }
+
+    .figureGrid p:nth-of-type(odd) {
+        margin-top: -22%;
+    }
+
+    .figureGrid p:nth-of-type(even) {
+        margin-left: 35%;
+        margin-top: 2%;
+    }
+
+    .figureGrid:nth-child(1),
+    .figureGrid:nth-child(2) {
+        margin-top: -10%;
+    }
+
+    .connect {
+        margin-top: -11%;
+    }
+
+    .connect ul {
+        margin-left: 40%;
+    }
+
+    .connect a {
+        display: grid;
+        justify-content: center;
+        margin-left: -20%;
+        margin-right: -20%;
+    }
+
+    footer {
+        margin-top: -20%;
+        padding-top: 10%;
+        background-color: #ffffff;
+    }
+
+    footer img {
+        height: 25%;
+        width: 25%;
+        margin-left: 5%;
+        margin-top: -13%;
+    }
+
+    footer p {
+        text-align: start;
+        font-weight: bold;
+        margin-top: 5px;
+        margin-left: 10%;
+        padding-bottom: 10px;
+    }
+}
+
+@media screen and (min-width:1280px) {
+
+    body {
+        width: 1280px;
+    }
+
+    nav {
+        position: relative;
+    }
+
+    nav ul {
+        display: grid;
+        grid-template-columns: 25% 5% 5% 5% 5% 5% 5% 5% 20%;
+        overflow: visible;
+        align-items: center;
+        transition: none;
+        margin-right: 5%
+    }
+
+    nav img {
+        height: 55px;
+        width: 55px;
+        padding-bottom: 10px;
+    }
+
+    .hamburger li:first-child svg {
+        margin-top: -21%;
+        margin-left: -118%;
+        padding: 29px;
+        padding-bottom: 32.5px;
+    }
+
+    .hamburger li:last-child svg {
+        margin-top: -5%;
+        margin-right: 0;
+        margin-left: 25%;
+    }
+
+    nav li:last-child a {
+        position: absolute;
+        margin-top: 15%;
+        margin-left: 8%;
+    }
+
+    .search {
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+
+    .search input,
+    .search label {
+        margin-top: 5%;
+        height: 35px;
+        width: 20%;
+        left: 4%;
+    }
+
+    .search button {
+        position: relative;
+        margin-left: -1.2%;
+        top: 5%;
+        left: 4%;
+    }
+
+    .streetTacos h1 {
+        text-align: center;
+        margin-top: 7%;
+    }
+
+    .streetTacosGrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: -2%;
+    }
+
+    .streetTacos img {
+        grid-column: 1/2;
+        width: 80%;
+        margin-left: -90%;
+    }
+
+    .streetTacos ul {
+        display: flex;
+        flex-direction: column;
+        margin-right: 90%;
+        background-color: #ffff;
+        border: 1px solid #EB5428;
+        margin-top: 3%;
+        margin-bottom: 1%;
+       
+    }
+
+    .streetTacos a {
+        display: grid;
+        padding-left: 10px;
+        margin: 18px;
+    }
+
+    .streetTacos li:last-child svg {
+        margin-left: -10%;
+    }
+
+    .streetTacosGrid p {
+        grid-column: 2/2;
+        position: relative;
+        top: -265%;
+        left: -8%;
+        padding: 0;
+        line-height: 2;
+    }
+
+    .details {
+        background-color: black;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-top: -22.7%;
+    }
+
+    .details h2,
+    .details dl {
+        color: #7ABFBF
+    }
+
+    .details h2 {
+        margin-bottom: 20px;
+    }
+
+    .detailsList {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        justify-content: space-between;
+        margin-left: -3%;
+    }
+
+    dl {
+        line-height: 1;
+    }
+
+    dd {
+        margin-left: 40%;
+    }
+
+    dl:nth-of-type(4) dd {
+        margin-left: 25%;
+    }
+
+    dl:nth-of-type(5) dd {
+        margin-left: 45%;
+    }
+
+    .recipe {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 5%;
+    }
+
+    .directions {
+        margin-left: -45%;
+    }
+
+    .ingredients h2 {
+        text-align: start;
+        margin-left: 5%;
+    }
+
+    .sideDishes h2 {
+        margin-bottom: 30%;
+    }
+
+    .figureGrid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin-top: 60%;
+    }
+
+    .figure1,
+    .figure3 {
+        margin-left: 0;
+    }
+
+    .figure1 {
+        grid-column: 1/1;
+    }
+
+    .figure2 {
+        grid-column: 2/2;
+    }
+
+    .figure3 {
+        grid-column: 3/3;
+    }
+
+    .figure4 {
+        grid-column: 4/4;
+    }
+
+    .figureGrid img {
+        height: 250px;
+        width: 250px;
+        left: 6%;
+        margin-top: -25%;
+        margin-bottom: 60%;
+    }
+
+    .figureGrid h3:first-of-type {
+        margin-top: 10%;
+        margin-bottom: -65%;
+    }
+
+    .figureGrid h3 {
+        text-align: start;
+        margin-top: 55%;
+        margin-left: 14%;
+    }
+
+    .star {
+        margin-left: 35%;
+        margin-top: -6%;
+        margin-bottom: 20%;
+    }
+
+    .figureGrid p:nth-of-type(even) {
+        margin-top: 5%;
+        margin-left: 14%;
+    }
+
+    .figureGrid p:nth-of-type(odd) {
+        margin-top: -45%;
+        margin-left: 14%;
+    }
+
+    .connect {
+        margin-top: -11%;
+    }
+
+    .connect ul {
+        margin-left: 60%;
+    }
+
+    .connect a {
+        display: grid;
+        justify-content: center;
+        margin-left: -20%;
+        margin-right: -20%;
+    }
+
+    footer {
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+
+    footer img {
+        height: 15%;
+        width: 15%;
+        margin-left: 5%;
+        margin-bottom: -8%;
+    }
+
+    footer p {
+        text-align: start;
+        margin-top: 5px;
+        margin-left: 20%;
+        margin-top: -7%;
+        padding-bottom: 10px;
+    }
+}
+
+
